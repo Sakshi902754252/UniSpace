@@ -1,0 +1,189 @@
+[
+    {
+        "Branch": "Computer Science",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2020/07/SESyllabusCompute.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/10/TE_Computer_2019_Course_22.06.2021.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/09/BE-Syllabus-2022-23.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Electronics and Telecommunication",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://jspmjscoe.edu.in/storage/PDF/syllabus/SE%20E_TC%20Syllabus%202019%20Pattern.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://www.aitpune.com/Documents/ETC/T.E%20ETC_2019%20course_09.07.2021.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://www.aitpune.com/Documents/ETC/BEETC_SYLLABUS.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Mechanical Engineering",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://bvcoe.bharatividyapeeth.edu/media/pdf/SE_Mech_and_Auto_Engg_2019_Patt_06-07-2020_170123.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://bvcoe.bharatividyapeeth.edu/media/pdf/TE_Mechanical_Engineering_2019_Course_170123.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://www.aitpune.com/Documents/Mech/BEMECHSyllabus.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Civil Engineering",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://bvcoe.bharatividyapeeth.edu/media/pdf/SE_Mech_and_Auto_Engg_2019_Patt_06-07-2020_170123.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://bvcoe.bharatividyapeeth.edu/media/pdf/TE_Civil_Syllabus-2019_Pattern_250123.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://bvcoe.bharatividyapeeth.edu/media/pdf/BE_Civil_Syllabus-2019_Pattern_250123.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Electrical Engineering",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "http://collegecirculars.unipune.ac.in/sites/documents/Syllabus2020/SE%20Electrical%20Engg.%202019%20Patt_30.062020.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://www.avcoe.org/pdf/syllbus/electrical/TE%20Electrical%202019%20Syllabus%2009.06.2021%20updated%20(1)_compressed.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://engg.dypvp.edu.in/syllabus/Electrical/BE-Electrical-Engineering-Syllabus-2019.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Artificial intelligence and Data science",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/11/SE_AI-DS_Curriculam_2021_28.06.2021.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/12/TE_AI-DS_Syllabus_2022.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2023/10/First-Draft-of-BE-AIDS-2020-Course-Syllabus.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Engineering Sciences",
+        "syllabus": [
+            {
+                "years": "FE",
+                "link": "https://metbhujbalknowledgecity.ac.in/MET%20DATA/IOE/fe/fe2019syllabus.pdf"
+            },
+            {
+                "years": "FE",
+                "link": "https://metbhujbalknowledgecity.ac.in/MET%20DATA/IOE/fe/fe2019syllabus.pdf"
+            },
+            {
+                "years": "FE",
+                "link": "https://metbhujbalknowledgecity.ac.in/MET%20DATA/IOE/fe/fe2019syllabus.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Information Technology",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/08/updated-final-se-1.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/08/Third_Year_Information-Technology_2019_Course_09.07.2021.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/08/BE_IT_2019_Course_Syllabus.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Robotics and Automation",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://www.avcoe.org/syllabus/production/SE-Automation%20Robotics_2019%20Course_29092021_compressed.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "http://collegecirculars.unipune.ac.in/sites/documents/Syllabus2020/TE_R-A_2019_11.032020.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "http://collegecirculars.unipune.ac.in/sites/documents/Syllabus2020/BE_R-A_2019_11.032020.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Instrumentation Engineering",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/06/SE-Instrumentatioin-and-Control-Engg.-2019-Patt_30.062020.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/10/T-E-Instrumentation-and-Control-2019-Course_Final.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/08/BE_Instrumentation_2019_Course_Final-1-1.pdf"
+            }
+        ]
+    },
+    {
+        "Branch": "Chemical Engineering",
+        "syllabus": [
+            {
+                "years": "SE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/06/SE-Instrumentatioin-and-Control-Engg.-2019-Patt_30.062020.pdf"
+            },
+            {
+                "years": "TE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2021/10/T-E-Instrumentation-and-Control-2019-Course_Final.pdf"
+            },
+            {
+                "years": "BE",
+                "link": "https://aissmsioit.org/wp-content/uploads/2022/08/BE_Instrumentation_2019_Course_Final-1-1.pdf"
+            }
+        ]
+    }
+]
