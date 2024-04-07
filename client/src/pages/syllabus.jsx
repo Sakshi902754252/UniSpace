@@ -5,7 +5,6 @@ import Header from "../partials/Header";
 import data from '../assets/branch.json';
 
 
-
 function Syllabus() {
   const [sidebarOpen, setSidebarOpen] = useState('');
   const [selectedBranch, setSelectedBranch] = useState('');

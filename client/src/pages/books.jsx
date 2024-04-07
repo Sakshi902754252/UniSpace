@@ -3,16 +3,18 @@ import axios from "axios";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import { Link, useNavigate } from "react-router-dom";
+import data from '../assets/branch.json';
 
 function Book() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [SelectedBranch, setSelectedBranch] = useState('');
   const [SelectedYear, setSelectedYear] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
   const handleYearChange = (e) => {
     setSelectedYear(e.target.value);
     console.log(e.target.value);
-    console.log("sakshi you havent done anything here !!!");
+    console.log("sakshi is now doing something here !!!");
   };
 
   const handleInputChange = (e) => {
@@ -22,14 +24,24 @@ function Book() {
 
   const handleFilterSubmit = async () => {
     try {
-      console.log("sakshi you havent done anything here !!!");
+      const response = await axios.get(`http://localhost:3000/api/books?branch=${SelectedBranch}&year=${SelectedYear}`);
+      console.log("response of the data is .....", response.data)
+      setFilteredData(response.data);
 
-      // Handle the response as needed
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching books:", error);
+      setFilteredData([]);
     }
   };
+
+  useEffect(() => {
+
+    handleFilterSubmit();
+  }, [SelectedBranch, SelectedYear]);
+
   // https://drive.usercontent.google.com/u/0/uc?id=1awG_GhXatBIt9pkLfjmo7mEiMfbKQ4KY&export=download
+
+
   return (
     <div className="flex h-screen overflow-hidden">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
@@ -59,6 +71,11 @@ function Book() {
                 >
                   {/* Options for Camp Category */}
                   <option value="">Select Branch</option>
+                  {data.map((branch, index) => (
+                    <option key={index} value={branch.Branch}>
+                      {branch.Branch}
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -114,54 +131,49 @@ function Book() {
                         <tr>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Reg. Id
+                              Branch
                             </div>
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Name
+                              year
                             </div>
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Subject
+                              subject
                             </div>
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Action
+                              action
                             </div>
                           </th>
                         </tr>
                       </thead>
                       <tbody className="text-sm font-medium divide-y divide-slate-100 dark:divide-slate-700">
-                        <tr>
-                          <td className="p-2">
-                            <div className="text-center">pattern</div>
-                          </td>
-
-                          <td className="p-2">
-                            <div className={`text-center`}>branch</div>
-                          </td>
-                          <td className="p-2">
-                            <div className={`text-center`}>subject</div>
-                          </td>
-                          <td className="p-2">
-                            <div className="text-center px-2">
-                              <Link className="text-sm text-white py-1 px-1 bg-red-500">
-                                <button
-                                  style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    padding: "1px",
-                                  }}
-                                >
-                                  Download
-                                </button>
-                              </Link>
-                            </div>
-                          </td>
-                        </tr>
+                        {filteredData[0]?.year[SelectedYear]?.map((book, index) => (
+                          <tr key={index}>
+                            <td className="p-2">
+                              <div className="text-center">{SelectedBranch}</div>
+                            </td>
+                            <td className="p-2">
+                              <div className={`text-center`}>{SelectedYear}</div>
+                            </td>
+                            <td className="p-2">
+                              <div className={`text-center`}>{book.book_name}</div>
+                            </td>
+                            <td className="p-2">
+                              <div className="text-center px-2">
+                                <Link to={book.link} className="text-sm text-white py-1 px-1 bg-red-500">
+                                  <button style={{ width: "100%", height: "100%", padding: "1px" }}>
+                                    Download
+                                  </button>
+                                </Link>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
                       </tbody>
                     </table>
                   </div>
