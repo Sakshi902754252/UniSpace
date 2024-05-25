@@ -1,0 +1,279 @@
+[
+    {
+        "branch": "Computer Science",
+        "year": {
+            "SE": {
+                "subject": {
+                    "Computer Graphics": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.usercontent.google.com/u/0/uc?id=1TTcqDrKedAHIZYKipL9Q2l5DV_gt2BWh&export=download"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Data Structures & Algorithms": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Digital Electronics & Logic Design": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Discrete mathematics": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Engineering Mathematics III": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Fundamentals of Data structures": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Microprocessors": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "OOPS": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Principals of Communication Systems": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Principles of Programming Languages": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Software Engineering": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        },
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ]
+                }
+            },
+            "TE": {
+                "subject": {
+                    "Artificial Inteligence": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1t5vb2SVFkAZ65dy0vv9EPiOfSmTo_p-g?direction=a"
+                        }
+                    ],
+                    "Cloud Computing": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1Qq4Yl5HwTvTNqsisyxSObi6VXLfv7GW7?direction=a"
+                        }
+                    ],
+                    "Computer Network & Security": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Data Science & Big data Analytics": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Data Science & Visualization": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Database Management Systems": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Embedded System & Internet of Things": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Human Computer Interface": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Information & Cyber Security": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Software Modeling & Architechtures": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Software project mgt": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "System Programming & Operating System": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Theory of Computation": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Virtual Reality & Augmented Reality": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Web Technology": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ]
+                }
+            },
+            "BE": {
+                "subject": {
+                    "Computer Graphics": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Computer Organization": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Data Structures & Problem Solving": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Digital Electronics & Problem Solving": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Discrete Structures": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Engineering Mathematics III": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Microprocessors and Interfacing Techniques": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Microprocessors Architechture": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Object Oriented and Multicore Programming": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ],
+                    "Operating System and Multicore Programming": [
+                        {
+                            "paper_name": "May_Jun_2014",
+                            "link": "https://drive.google.com/drive/folders/1bDIwDgDiFlP8y_mVhGwdVE8tTMWs13bx?direction=a"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

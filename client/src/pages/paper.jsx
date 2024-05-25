@@ -1,43 +1,91 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import branchData from '../assets/branch.json';
+import paperData from '../assets/previous_paper.json';
+import axios from "axios";
 
 
 function Paper() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [camps, setCamps] = useState([]);
-  const [body, setBody] = useState({
-    camp_id: "",
-    year: "",
-    paper_pattern: "",
-    subject: "",
-  });
+  const [SelectedBranch, setSelectedBranch] = useState('');
+  const [SelectedYear, setSelectedYear] = useState('');
+  const [selectedSubject, setSelectedSubject] = useState('');
+  const [papers, setPapers] = useState([]);
+  const [Subjects, setSubjects] = useState([]);
 
-  useEffect(() => {
-    async function getAllCamps() {
-      const res = await axios.get("https://mcfapis.bnbdevelopers.in/getAllCamps");
-      const camps = res.data.camps;
-      setCamps(camps);
-    }
-    getAllCamps();
-  }, []);
+
+  const handleSubjectChange = (e) => {
+    const subject = e.target.value;
+    setSelectedSubject(subject);
+    console.log(subject);
+  };
+
+
+  const handleYearChange = (e) => {
+    const year = e.target.value;
+    setSelectedYear(year);
+    console.log(year);
+    fetchSubjects(SelectedBranch, year);
+  };
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setBody({ ...body, [name]: value });
+    const branch = e.target.value;
+    setSelectedBranch(branch);
+    console.log(branch);
+    fetchSubjects(branch, SelectedYear);
+  };
+
+  const fetchSubjects = (branch, year) => {
+    if (branch && year) {
+      const branchData = paperData.find(item => item.branch === branch);
+      if (branchData && branchData.year[year]) {
+        setSubjects(Object.keys(branchData.year[year].subject));
+      } else {
+        setSubjects([]);
+      }
+    } else {
+      setSubjects([]);
+    }
   };
 
   const handleFilterSubmit = async () => {
     try {
-      console.log("sakshi do somthing here");
-     
-      // Handle the response as needed
+      console.log("Fetching papers for selected criteria...");
+      console.log("SelectedBranch:", SelectedBranch);
+      console.log("SelectedYear:", SelectedYear);
+      console.log("selectedSubject:", selectedSubject);
+
+      const response = await axios.get(`http://localhost:3000/api/paper`, {
+        params: {
+          branch: SelectedBranch,
+          year: SelectedYear,
+          subject: selectedSubject,
+        },
+      });
+      console.log("Response data:", response.data);
+
+      // Assuming response.data is an array of objects with 'papers' key containing an array of paper objects
+      const formattedPapers = response.data.map(item => {
+        return item.papers.map(paper => ({
+          branch: item.branch,
+          year: item.year,
+          subject: item.subject,
+          paper_name: paper.paper_name, // Adjust according to your actual paper object structure
+          link: paper.link // Adjust according to your actual paper object structure
+        }));
+      }).flat();
+
+      setPapers(formattedPapers);
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching papers:", error);
+      setPapers([]);
     }
   };
+  
+
+
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -52,100 +100,75 @@ function Paper() {
           </div>
           <div className="flex justify-center grid grid-cols-1 py-2">
             <div className="grid grid-cols-2 px-9 gap-4">
-            <div>
+              <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="branch"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
                   Branch
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
+                  id="branch"
+                  name="branch"
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Branch</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
+                  {branchData.map((branch, index) => (
+                    <option key={index} value={branch.Branch}>
+                      {branch.Branch}
+                    </option>
                   ))}
                 </select>
               </div>
 
               <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="year"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
-                  Year 
+                  Year
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
-                  onChange={handleInputChange}
+                  id="year"
+                  name="year"
+                  onChange={handleYearChange}
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Year</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
-                  ))}
+                  <option value="FE">FE</option>
+                  <option value="SE">SE</option>
+                  <option value="TE">TE</option>
+                  <option value="BE">BE</option>
                 </select>
               </div>
-
-              
             </div>
 
             <div className="grid grid-cols-1 px-9 gap-4">
-            <div>
+              <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="subject"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
                   Subject
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
-                  onChange={handleInputChange}
+                  id="subject"
+                  name="subject"
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
+                  onChange={handleSubjectChange}
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Subject</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
+                  {Subjects.map((subject, index) => (
+                    <option key={index} value={subject}>
+                      {subject}
+                    </option>
                   ))}
                 </select>
               </div>
             </div>
 
-            <div  className="grid grid-cols-2 px-9 gap-4 mt-4">
-            <div>
-                <label
-                  htmlFor="camp_category"
-                  className="block text-lg font-xs text-gray-600 w-full"
-                >
-                  Paper Pattern
-                </label>
-                <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded shadow appearance-none"
-                >
-                  {/* Options for Camp Category */}
-                  <option value="">Select Pattern</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
-                  ))}
-                </select>
-              </div>
-
+            <div className="grid grid-cols-2 px-9 gap-4 mt-4">
               <div style={{ display: "flex", flexDirection: "column-reverse" }}>
                 <div className="text-center bg-blue-500 text-white py-2 px-2 rounded-md hover:bg-blue-600">
                   <button type="button" onClick={handleFilterSubmit}>
@@ -172,71 +195,60 @@ function Paper() {
                     >
                       <thead className="text-xs uppercase text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-700 dark:bg-opacity-50 rounded-sm">
                         <tr>
-                          <th className="p-2">
-                            <div className="font-semibold text-center">Sr.</div>
-                          </th>
-                          <th className="p-2">
+                          <th className="p-1">
                             <div className="font-semibold text-center">
-                              Reg. Id
+                              Branch
                             </div>
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Name
+                              Year
                             </div>
                           </th>
-
-                        
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Pick-up City
+                              Subject
                             </div>
                           </th>
                           <th className="p-2">
-                            <div className="font-semibold text-center">CQY</div>
+                            <div className="font-semibold text-center">Paper</div>
+                          </th>
+                          <th className="p-2">
+                            <div className="font-semibold text-center">
+                              Action
+                            </div>
                           </th>
                         </tr>
                       </thead>
                       <tbody className="text-sm font-medium divide-y divide-slate-100 dark:divide-slate-700">
-                          <tr>
-                            <td>
-                              <div
-                                className="text-center"
-                                style={{ fontWeight: "bold" }}
-                              >
-                                1
-                              </div>
+                        {papers.map((paper, index) => (
+                          <tr key={index}>
+                            <td className="p-2">
+                              <div className="text-center">{paper.branch}</div>
                             </td>
                             <td className="p-2">
-                              <div className="text-center">
-                                pattern
-                              </div>
-                            </td>
-                           
-                            <td className="p-2">
-                              <div className={`text-center`}>branch</div>
+                              <div className="text-center">{paper.year}</div>
                             </td>
                             <td className="p-2">
-                              <div className={`text-center`}>subect</div>
+                              <div className="text-center">{paper.subject}</div>
+                            </td>
+                            <td className="p-2">
+                              <div className="text-center">{paper.paper_name}</div>
                             </td>
                             <td className="p-2">
                               <div className="text-center px-2">
-                                <Link className="text-sm text-white py-1 px-1 bg-red-500">
-                                  <button
-                                    style={{
-                                      width: "100%",
-                                      height: "100%",
-                                      padding: "1px",
-                                    }}
-                                  >
+                                <Link to={paper.link} className="text-sm text-white py-1 px-1 bg-red-500">
+                                  <button style={{ width: "100%", height: "100%", padding: "1px" }}>
                                     Download
                                   </button>
-                                </Link>                          
+                                </Link>
                               </div>
                             </td>
                           </tr>
-                    
+                        ))}
                       </tbody>
+
+
                     </table>
                   </div>
                 </div>
