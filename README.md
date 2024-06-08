@@ -10,7 +10,7 @@ Allows students to upload and find notes.
 Target Users: Students from approximately 800 institutes affiliated with SPPU.
 
 
-Technologies Used: MongoDB, Express.js, React.js, Node.js.
+Technologies Used: MongoDB, Express.js, React.js, Node.js, Docker.
 
 
 Impact: Facilitates exam preparation and resource sharing among SPPU students.
