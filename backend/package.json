@@ -2,9 +2,9 @@
   "name": "getcode-user",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "backend/api/index.js",
   "scripts": {
-    "dev": "node api/index.js"
+    "dev": "node backend/api/index.js"
   },
   "keywords": [],
   "author": "",
