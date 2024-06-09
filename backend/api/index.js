@@ -101,6 +101,11 @@ async function uploadFileToDrive(filePath, fileName, folderId) {
     }
 }
 
+app.get('/', (req, res) => {
+    res.send('Hello, Vercel!');
+  });
+  
+
 
 
 
