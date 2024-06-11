@@ -57,7 +57,7 @@ function Paper() {
       console.log("SelectedYear:", SelectedYear);
       console.log("selectedSubject:", selectedSubject);
 
-      const response = await axios.get(`http://localhost:3000/api/paper`, {
+      const response = await axios.get(`https://uni-space-server.vercel.app/api/paper`, {
         params: {
           branch: SelectedBranch,
           year: SelectedYear,
