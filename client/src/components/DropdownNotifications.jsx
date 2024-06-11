@@ -72,7 +72,7 @@ function DropdownNotifications({
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                📣 <span className="font-medium text-slate-800 dark:text-slate-100">DISCLAIMER AND NOTICE </span> <p>He je kahi pn kelya gel aahe te sagl sakshi shinde dwara kelya gele aahe ...jrr konala piracy ch petition takaychi asel trr mg tenni sakshi cha nava vrr takava ...ajun konacha kahis dosh nhi yechat </p>
+                📣 <span className="font-medium text-slate-800 dark:text-slate-100">DISCLAIMER AND NOTICE </span> <p>All Previous Year Papers AND syllabus for all branches is available</p>
                 <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">March 26, 2024</span>
               </Link>
             </li>

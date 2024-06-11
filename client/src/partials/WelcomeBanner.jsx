@@ -47,8 +47,8 @@ function WelcomeBanner() {
 
       {/* Content */}
       <div className="relative">
-        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">Good afternoon, fuCk SppU 🖕🏾</h1>
-        <p className="dark:text-indigo-200">Here is what u gonna need at exam times :</p>
+        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">UniSpace</h1>
+        <p className="dark:text-indigo-200">A Website from SPPU Student is made for SPPU Students</p>
       </div>
     </div>
   );
