@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
-function WelcomeBanner() {
+function Banner3() {
   return (
-    <div className="relative bg-red-200 dark:bg-red-500 p-4 sm:p-6 rounded-sm overflow-hidden mb-8">
+    <div className="relative bg-green-200 dark:bg-green-500 p-4 sm:p-6 rounded-sm overflow-hidden mb-8">
       {/* Background illustration */}
       <div className="absolute right-0 top-0 -mt-4 mr-16 pointer-events-none hidden xl:block" aria-hidden="true">
         <svg width="319" height="198" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -47,11 +48,20 @@ function WelcomeBanner() {
 
       {/* Content */}
       <div className="relative">
-        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">UniSpace 📝🤓</h1>
-        <p className="dark:text-indigo-200">A Website from SPPU Student is made for SPPU Students</p>
+        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">Handwritten Notes</h1>
+        <p className="dark:text-indigo-200">We offer you the service of having handwritten notes.
+            <br></br> " as well as help other my uploading your notes to our website. "</p>
+
+            <div className="text-center bg-green-800 text-white py-2 px-1 rounded-md hover:bg-green-600  mt-4" style={{width:'45vw'}}>
+            <NavLink to="/notes">
+        <button type="button">
+            Get them here
+        </button>
+        </NavLink>
+                </div>
       </div>
     </div>
   );
 }
 
-export default WelcomeBanner;
+export default Banner3;

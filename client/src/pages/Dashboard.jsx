@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
 import WelcomeBanner from '../partials/WelcomeBanner';
+import Banner2 from '../partials/Banner2';
+import Banner3 from '../partials/Banner3';
 
 
 function Dashboard() {
@@ -26,6 +28,8 @@ function Dashboard() {
 
             {/* Welcome banner */}
             <WelcomeBanner />
+            <Banner2 />
+            <Banner3 />
 
             {/* Dashboard actions */}
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
