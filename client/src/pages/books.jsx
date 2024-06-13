@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
+import branchData from '../assets/branch.json';
 import { Link, useNavigate } from "react-router-dom";
 import data from '../assets/branch.json';
 

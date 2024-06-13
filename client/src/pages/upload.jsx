@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
+import branchData from '../assets/branch.json';
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Upload() {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [formData, setFormData] = useState({
-    camp_name: "",
-    camp_place: "",
-    camp_fee: "",
-    camp_description: "",
-    fee_discount: "0",
-    final_fee: "",
-    camp_status: "Active",
+    branch: "",
+    year: "",
+    examination: "",
+    subject: "",
+    UnitName: "",
   });
+
+  const [file, setFile] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -25,22 +26,56 @@ function Upload() {
   };
 
   const handleFileChange = (e) => {
-    // Handle file change logic here
+    setFile(e.target.files[0]);
   };
 
-  const handleFilterSubmit = () => {
-    // Handle filter submit logic here
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const uploadData = new FormData();
+    uploadData.append('branch', formData.branch);
+    uploadData.append('year', formData.year);
+    uploadData.append('examination', formData.examination);
+    uploadData.append('subject', formData.subject);
+    uploadData.append('UnitName', formData.UnitName);
+    uploadData.append('Notes', file);
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/upload', uploadData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      if (response.status === 201) {
+        alert('File uploaded successfully');
+        // Optionally, reset the form here
+        setFormData({
+          branch: "",
+          year: "",
+          examination: "",
+          subject: "",
+          UnitName: "",
+        });
+        setFile(null);
+      } else {
+        alert('File upload failed');
+      }
+    } catch (error) {
+      console.error('File upload error:', error);
+      alert('File upload error');
+    }
   };
 
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
         {/* Site header */}
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-4 w-full max-w-screen-xl mx-auto">
@@ -60,129 +95,138 @@ function Upload() {
                 </Link>
               </header>
               <div className="p-3 shadow-lg border border-gray-300 rounded-lg">
-                <div className="grid grid-cols-1 py-4 gap-4">
-                  <div className="grid grid-cols-2 px-4 gap-4">
-                    {/* Your form inputs here */}
-                    <div>
-                      <label
-                        htmlFor="camp_category"
-                        className="block text-lg font-xs text-gray-600 w-full"
-                      >
-                        Branch
-                      </label>
-                      <select
-                        id="camp_name"
-                        name="camp_id"
-                        // value={body.camp_name}
+                <form onSubmit={handleSubmit}>
+                  <div className="grid grid-cols-1 py-4 gap-4">
+                    <div className="grid grid-cols-2 px-4 gap-4">
+                      <div>
+                        <label
+                          htmlFor="branch"
+                          className="block text-lg font-xs text-gray-600 w-full"
+                        >
+                          Branch
+                        </label>
+                        <select
+                          id="branch"
+                          name="branch"
+                          value={formData.branch}
+                          onChange={handleInputChange}
+                          className="w-full px-3 py-2 border rounded shadow appearance-none"
+                        >
+                          <option value="">Select Branch</option>
+                          {branchData.map((branch, index) => (
+                            <option key={index} value={branch.Branch}>
+                              {branch.Branch}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
 
-                        className="w-full px-3 py-2 border rounded shadow appearance-none"
-                      >
-                        {/* Options for Camp Category */}
-                        <option value="">Your Branch</option>
-                      </select>
+                      <div>
+                        <label
+                          htmlFor="year"
+                          className="block text-lg font-xs text-gray-600 w-full"
+                        >
+                          Year
+                        </label>
+                        <select
+                          id="year"
+                          name="year"
+                          value={formData.year}
+                          onChange={handleInputChange}
+                          className="w-full px-3 py-2 border rounded shadow appearance-none"
+                        >
+                          <option value="">Select Year</option>
+                          <option value="FE">FE</option>
+                          <option value="SE">SE</option>
+                          <option value="TE">TE</option>
+                          <option value="BE">BE</option>
+                        </select>
+                      </div>
                     </div>
 
-                    <div>
-                      <label
-                        htmlFor="camp_category"
-                        className="block text-lg font-xs text-gray-600 w-full"
-                      >
-                        Year
-                      </label>
-                      <select
-                        id="camp_name"
-                        name="camp_id"
-                        // value={body.camp_name}
+                    <div className="grid grid-cols-2 px-4 gap-4">
+                      <div>
+                        <label
+                          htmlFor="examination"
+                          className="block text-lg font-xs text-gray-600 w-full"
+                        >
+                          Examination
+                        </label>
+                        <select
+                          id="examination"
+                          name="examination"
+                          value={formData.examination}
+                          onChange={handleInputChange}
+                          className="w-full px-3 py-2 border rounded shadow appearance-none"
+                        >
+                          <option value="">Select Examination</option>
+                          <option value="Insem">Insem</option>
+                          <option value="Endem">Endsem</option>
+                        </select>
+                      </div>
 
-                        className="w-full px-3 py-2 border rounded shadow appearance-none"
+                      <div>
+                        <label
+                          htmlFor="subject"
+                          className="block text-lg font-xs text-gray-600 w-full"
+                        >
+                          Subject
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleInputChange}
+                          className="w-full px-3 py-2 border rounded shadow appearance-none"
+                          placeholder="Enter Subject"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="px-4 gap-4">
+                      <label
+                        htmlFor="Notes"
+                        className="block text-sm font-medium text-gray-600 "
                       >
-                        {/* Options for Camp Category */}
-                        <option value="">Select Year</option>
-                      </select>
+                        Your Notes
+                      </label>
+                      <input
+                        type="file"
+                        id="Notes"
+                        name="Notes"
+                        onChange={handleFileChange}
+                        className="w-full px-3 py-4 border rounded shadow appearance-none"
+                        accept="application/pdf"
+                      />
+                    </div>
+
+                    <div className="px-4 gap-4">
+                      <label
+                        htmlFor="UnitName"
+                        className="block text-sm font-xs text-gray-600"
+                      >
+                        Unit Name :
+                      </label>
+                      <input
+                        type="text"
+                        id="UnitName"
+                        name="UnitName"
+                        value={formData.UnitName}
+                        onChange={handleInputChange}
+                        className="w-full px-3 py-2 border rounded shadow appearance-none"
+                        placeholder="Enter unit name..."
+                      />
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 px-4 gap-4">
-                    {/* Your form inputs here */}
-                    <div>
-                      <label
-                        htmlFor="camp_category"
-                        className="block text-lg font-xs text-gray-600 w-full"
-                      >
-                        Examination
-                      </label>
-                      <select
-                        id="camp_name"
-                        name="camp_id"
-                        // value={body.camp_name}
-
-                        className="w-full px-3 py-2 border rounded shadow appearance-none"
-                      >
-                        {/* Options for Camp Category */}
-                        <option value="">Select Year</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="camp_category"
-                        className="block text-lg font-xs text-gray-600 w-full"
-                      >
-                        Subject
-                      </label>
-                      <select
-                        id="camp_name"
-                        name="camp_id"
-                        // value={body.camp_name}
-
-                        className="w-full px-3 py-2 border rounded shadow appearance-none"
-                      >
-                        {/* Options for Camp Category */}
-                        <option value="">Select</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="px-4 gap-4">
-                    <label
-                      htmlFor="Notes"
-                      className="block text-sm font-medium text-gray-600 "
-                    >
-                      Your Notes
-                    </label>
-                    <input
-                      type="file"
-                      id="Notes"
-                      name="Notes"
-                      onChange={handleFileChange}
-                      className="w-full px-3 py-4 border rounded shadow appearance-none"
-                      accept="pdf/*"
-                    />
-                  </div>
-
-                  <div className="px-4 gap-4">
-                    <label
-                      htmlFor="camp_category"
-                      className="block text-sm font-xs text-gray-600"
-                    >
-                      Description
-                    </label>
-                    <input
-                      type="text"
-                      id="camp_category"
-                      name="camp_category"
-                      className="w-full px-3 py-2 border rounded shadow appearance-none"
-                      placeholder="Enter description like unit name..."
-                    />
-                  </div>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-32 p-3 mt-4 ml-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
-                >
-                  Upload
-                </button>
+                  <button
+                    type="submit"
+                    className="w-32 p-3 mt-4 ml-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
+                  >
+                    Upload
+                  </button>
+                </form>
               </div>
             </div>
           </div>

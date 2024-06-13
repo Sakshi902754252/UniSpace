@@ -222,7 +222,7 @@ app.post('/api/upload', upload.single('Notes'), async (req, res) => {
         const db = client.db(dbName);
 
         const collection = db.collection('notes');
-        const { branch, year, examination, description } = req.body;
+        const { branch, year, examination, subject, UnitName } = req.body;
         const file = req.file;
         
 
@@ -239,7 +239,8 @@ app.post('/api/upload', upload.single('Notes'), async (req, res) => {
             branch,
             year,
             examination,
-            description,
+            subject,
+            UnitName,
             fileUrl,
             createdAt: new Date(),
         };
@@ -255,6 +256,90 @@ app.post('/api/upload', upload.single('Notes'), async (req, res) => {
         res.status(500).json({ message: 'File upload failed.' });
     }
 });
+
+app.get('/api/notes', async (req, res) => {
+    try {
+      await client.connect();
+      console.log('MongoDB connected successfully.');
+  
+      const db = client.db(dbName);
+      const collection = db.collection('notes');
+  
+      let { branch, year, subject } = req.query;
+      console.log('Query Parameters:', branch, year, subject);
+  
+      // Trim the values to remove any leading/trailing whitespace
+      branch = branch ? branch.trim() : branch;
+      year = year ? year.trim() : year;
+      subject = subject ? subject.trim() : subject;
+      console.log('Trimmed Query Parameters:', branch, year, subject);
+  
+      let filter = {};
+      if (branch) filter.branch = branch;
+      if (year) filter.year = year;
+      if (subject) filter.subject = subject;
+      console.log('Filter:', filter);
+  
+      const notes = await collection.find(filter).toArray();
+      console.log('Fetched Notes:', notes);
+  
+      res.json(notes);
+    } catch (error) {
+      console.error('Error fetching notes:', error);
+      res.status(500).json({ message: 'An error occurred while fetching notes.' });
+    } finally {
+      await client.close();
+    }
+  });
+  
+  
+  
+
+app.get('/api/subjects', async (req, res) => {
+    try {
+        await client.connect();
+        console.log('MongoDB connected successfully.');
+
+        // Access the specific database
+        const db = client.db(dbName);
+
+        // Access the specific collection (assuming the collection is named 'notes')
+        const collection = db.collection('notes'); // Change the collection name if needed
+
+        // Get the branch and year from the query parameters
+        const { branch, year } = req.query;
+        console.log('Query Parameters:', branch, year);
+
+        // Define the filter based on branch and year
+        let filter = {};
+        if (branch) {
+            filter.branch = branch;
+        }
+        if (year) {
+            filter.year = year;
+        }
+        console.log('Filter:', filter);
+
+        // Fetch subjects from the collection based on the filter
+        const notes = await collection.find(filter).toArray();
+        console.log('Fetched Notes:', notes);
+
+        // Extract subjects
+        const subjects = notes.map(note => note.subject);
+        console.log('Subjects:', subjects);
+
+        // Return the subjects as JSON
+        res.json(subjects);
+
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).json({ message: error.message });
+    } finally {
+        // Ensure the client is closed when you finish using it
+        await client.close();
+    }
+});
+
 
 
 app.listen(PORT, () => {

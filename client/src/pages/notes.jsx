@@ -2,40 +2,64 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
-import { Link, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import branchData from '../assets/branch.json';
 
 function Notes() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [camps, setCamps] = useState([]);
-  const [body, setBody] = useState({
-    camp_id: "",
+  const [subjects, setSubjects] = useState([]);
+  const [notes, setNotes] = useState([]);
+  const [formData, setFormData] = useState({
+    branch: "",
     year: "",
-    paper_pattern: "",
     subject: "",
   });
+  const [alertMessage, setAlertMessage] = useState("");
 
   useEffect(() => {
-    async function getAllCamps() {
-      const res = await axios.get("https://mcfapis.bnbdevelopers.in/getAllCamps");
-      const camps = res.data.camps;
-      setCamps(camps);
+    if (formData.branch && formData.year) {
+      fetchSubjects(formData.branch, formData.year);
     }
-    getAllCamps();
-  }, []);
+  }, [formData.branch, formData.year]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setBody({ ...body, [name]: value });
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const fetchSubjects = async (branch, year) => {
+    try {
+      const response = await axios.get('http://localhost:3000/api/subjects', {
+        params: { branch, year },
+      });
+      setSubjects(response.data);
+      if (response.data.length === 0) {
+        setAlertMessage("Currently Notes are not available for your Branch.");
+      } else {
+        setAlertMessage("");
+      }
+    } catch (error) {
+      console.error("Error fetching subjects:", error);
+    }
   };
 
   const handleFilterSubmit = async () => {
     try {
-      console.log("sakshi do somthing here");
-     
-      // Handle the response as needed
+      const response = await axios.get('http://localhost:3000/api/notes', {
+        params: {
+          branch: formData.branch,
+          year: formData.year,
+          subject: formData.subject,
+        },
+      });
+      setNotes(response.data);
+      if (response.data.length === 0) {
+        setAlertMessage("No notes found for the selected criteria.");
+      } else {
+        setAlertMessage("");
+      }
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error fetching notes:", error);
     }
   };
 
@@ -52,70 +76,72 @@ function Notes() {
           </div>
           <div className="flex justify-center grid grid-cols-1 py-2">
             <div className="grid grid-cols-2 px-9 gap-4">
-            <div>
+              <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="branch"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
                   Branch
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
+                  id="branch"
+                  name="branch"
+                  value={formData.branch}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Branch</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
+                  {branchData.map((branch, index) => (
+                    <option key={index} value={branch.Branch}>
+                      {branch.Branch}
+                    </option>
                   ))}
                 </select>
-               </div>
+              </div>
 
               <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="year"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
-                  Year 
+                  Year
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
+                  id="year"
+                  name="year"
+                  value={formData.year}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Year</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
-                  ))}
+                  <option value="FE">FE</option>
+                  <option value="SE">SE</option>
+                  <option value="TE">TE</option>
+                  <option value="BE">BE</option>
                 </select>
               </div>
             </div>
 
-            <div  className="grid grid-cols-2 px-9 gap-4 mt-4">
-            <div>
+            <div className="grid grid-cols-2 px-9 gap-4 mt-4">
+              <div>
                 <label
-                  htmlFor="camp_category"
+                  htmlFor="subject"
                   className="block text-lg font-xs text-gray-600 w-full"
                 >
                   Subject
                 </label>
                 <select
-                  id="camp_name"
-                  name="camp_id"
-                  // value={body.camp_name}
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleInputChange}
                   className="w-full px-3 py-2 border rounded shadow appearance-none"
                 >
-                  {/* Options for Camp Category */}
                   <option value="">Select Subject</option>
-                  {camps.map((camp) => (
-                    <option value={camp.camp_id}>{camp.camp_name}</option>
+                  {subjects.map((subject, index) => (
+                    <option key={index} value={subject}>
+                      {subject}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -129,6 +155,12 @@ function Notes() {
               </div>
             </div>
           </div>
+
+          {alertMessage && (
+            <div className="px-4 sm:px-6 lg:px-8 py-2 w-full max-w-screen-xxl mx-auto">
+              <div className="text-center text-red-500">{alertMessage}</div>
+            </div>
+          )}
 
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-screen-xxl mx-auto">
             <div className="grid grid-cols-12 gap-6">
@@ -151,51 +183,44 @@ function Notes() {
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Reg. Id
+                              Examination
                             </div>
                           </th>
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Name
+                              Unit Name
                             </div>
                           </th>
-
-                        
                           <th className="p-2">
                             <div className="font-semibold text-center">
-                              Pick-up City
+                              Subject
                             </div>
                           </th>
                           <th className="p-2">
-                            <div className="font-semibold text-center">CQY</div>
+                            <div className="font-semibold text-center">Action</div>
                           </th>
                         </tr>
                       </thead>
                       <tbody className="text-sm font-medium divide-y divide-slate-100 dark:divide-slate-700">
-                          <tr>
+                        {notes.map((note, index) => (
+                          <tr key={note._id}>
                             <td>
-                              <div
-                                className="text-center"
-                                style={{ fontWeight: "bold" }}
-                              >
-                                1
+                              <div className="text-center" style={{ fontWeight: "bold" }}>
+                                {index + 1}
                               </div>
                             </td>
                             <td className="p-2">
-                              <div className="text-center">
-                                Unit name 
-                              </div>
-                            </td>
-                           
-                            <td className="p-2">
-                              <div className={`text-center`}>branch</div>
+                              <div className="text-center">{note.examination}</div>
                             </td>
                             <td className="p-2">
-                              <div className={`text-center`}>subect</div>
+                              <div className="text-center">{note.UnitName}</div>
+                            </td>
+                            <td className="p-2">
+                              <div className="text-center">{note.subject}</div>
                             </td>
                             <td className="p-2">
                               <div className="text-center px-2">
-                                <Link className="text-sm text-white py-1 px-1 bg-red-500">
+                                <Link to={note.fileUrl} target="_blank" className="text-sm text-white py-1 px-1 bg-red-500">
                                   <button
                                     style={{
                                       width: "100%",
@@ -205,11 +230,11 @@ function Notes() {
                                   >
                                     Download
                                   </button>
-                                </Link>                          
+                                </Link>
                               </div>
                             </td>
                           </tr>
-                    
+                        ))}
                       </tbody>
                     </table>
                   </div>
