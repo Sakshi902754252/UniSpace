@@ -29,7 +29,7 @@ function Notes() {
 
   const fetchSubjects = async (branch, year) => {
     try {
-      const response = await axios.get('http://localhost:3000/api/subjects', {
+      const response = await axios.get('https://uni-space-server.vercel.app/api/subjects', {
         params: { branch, year },
       });
       setSubjects(response.data);
@@ -45,7 +45,7 @@ function Notes() {
 
   const handleFilterSubmit = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/notes', {
+      const response = await axios.get('https://uni-space-server.vercel.app/api/notes', {
         params: {
           branch: formData.branch,
           year: formData.year,

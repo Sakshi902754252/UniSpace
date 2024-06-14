@@ -41,7 +41,7 @@ function Upload() {
     uploadData.append('Notes', file);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/upload', uploadData, {
+      const response = await axios.post('https://uni-space-server.vercel.app/api/upload', uploadData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

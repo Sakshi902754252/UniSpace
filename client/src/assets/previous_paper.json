@@ -628,31 +628,786 @@
                     ],
                     "Machine Learning of Internet of Things": [
                         {
-                            "paper_name": "May_Jun_2014",
-                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1EorjiIQXP9KQfGUF8BW9AhuLwJg3lWHa"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1al59SOTKsq8njAImFSjZLPQayVJRBQP3"
                         }
                     ],
                     "Mobile Computing": [
                         {
-                            "paper_name": "May_Jun_2014",
-                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=17hC4MnAaR5XtiLYobApCAs7LczBZPjfp"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1W68x3_f72OYb0RJ-WEswtq7xRmgt3-Oy"
                         }
                     ],
                     "Natural Language Processing": [
                         {
-                            "paper_name": "May_Jun_2014",
-                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1IuKuLLMVox3G862LiSovDG3X_OK68Pe7"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1GeGvknL-GAuSEEt9QHv67phdzViCsO7B"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1XQOqwitftW25y_Cg9yfuT55-HUzWJNT9"
                         }
                     ],
                     "Software Testing & Quality Assuarance": [
                         {
-                            "paper_name": "May_Jun_2014",
-                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1L0BunihQDyp5UYpmjb3zyyL3k7fQqmBX"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1XU2qRvX9zwhhWaRcwiw5CQvepsr7Vg1K"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1uvpIp1nBALPb0yKbb-3pf_OHYYsVG8bd"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1NQGBxHNLcblPc_7qJgehHePNG_O5fQch"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1jlmCht2ytMA8tX7wdZZ_n111Su6bojaD"
                         }
                     ],
                     "Virtual Reality in Game Development": [
                         {
-                            "paper_name": "May_Jun_2014",
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=1NAEqjR8OCuFT1FfSPThMP7gxkhpAHepq"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=1ebRJBPlpCJWAPdsHxpoV1gAC76dilMwx"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "branch": "Electronics and Telecommunication",
+        "year": {
+            "SE": {
+                "subject": {
+                    "control system": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Data Structures": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Digital Circuits": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electrical circuits": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electronic & circuits": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electronic circuits": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Engineering Mathematics III": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }   
+                    ],
+                    "OOPS": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Principals of Communication Systems": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Signals & systems": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ]
+                }
+            },
+            "TE": {
+                "subject": {
+                    "Advanced Java Programming": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Blockchain Technology": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        } 
+                    ],
+                    "Cellular Networks": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Computer Networks": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Database Management": [
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Decentralize Blockchain Technologies": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Digital Communication": [
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Digital Image Processing": [
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Digital Signal processing": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electromagnetic Feild Theory": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Embedded Processors": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "hhttps://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Fundamentals of Java Programming": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Microcontrollers": [
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Network Security": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Power devices & circuits": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Project Management": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ]
+                }
+            },
+            "BE": {
+                "subject": {
+                    "Cloud Computing": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Deep learning": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Digital marketing": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electronic Product Development": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Fiber Optic Communication": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Industrial Robotics & Automation": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Java Script": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Mobile computing": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Moniterized IOT": [
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Nano electronics": [
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Radiation & microwave theory": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Smart contract & Crypto Currency": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "VLSI Design & Technology": [
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
                             "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
                         }
                     ]
