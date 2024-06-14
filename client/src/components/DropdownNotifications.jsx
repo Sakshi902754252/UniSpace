@@ -76,7 +76,7 @@ function DropdownNotifications({
 <p>-Content Responsibility: Uploaders are responsible for the accuracy and legality of the content. We do not verify or endorse the material.<br></br>
 -Copyright Compliance: If any content infringes your copyright, contact us immediately for removal.<br></br>
 -Educational Use Only: Materials are for educational purposes only and should not be used commercially.<br></br>
--Privacy Protection: We respect user privacy and do not share personal information with third parties. </p>
+-Privacy Protection: We respect user and do not share personal information with third parties. </p>
                 <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">March 26, 2024</span>
               </Link>
             </li>
