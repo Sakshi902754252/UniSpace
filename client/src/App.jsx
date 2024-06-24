@@ -3,6 +3,7 @@ import {Routes,Route} from 'react-router-dom';
 import './css/style.css';
 
 
+
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Syllabus from './pages/syllabus';
@@ -10,6 +11,7 @@ import Paper from './pages/paper';
 import Book from './pages/books';
 import Notes from './pages/notes';
 import Upload from './pages/upload';
+
 
 function App() {
   
