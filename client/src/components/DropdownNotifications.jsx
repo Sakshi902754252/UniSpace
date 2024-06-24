@@ -72,7 +72,11 @@ function DropdownNotifications({
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                📣 <span className="font-medium text-slate-800 dark:text-slate-100">DISCLAIMER AND NOTICE </span> <p>All Previous Year Papers AND syllabus for all branches is available</p>
+                📣 <span className="font-medium text-slate-800 dark:text-slate-100">DISCLAIMER AND NOTICE </span> <p>We do not claim any ownership or rights over the material shared on this website. The content is uploaded by anonymous contributors solely for the benefit of Savitribai Phule Pune University (SPPU) students.</p><br></br>
+<p>-Content Responsibility: Uploaders are responsible for the accuracy and legality of the content. We do not verify or endorse the material.<br></br>
+-Copyright Compliance: If any content infringes your copyright, contact us immediately for removal.<br></br>
+-Educational Use Only: Materials are for educational purposes only and should not be used commercially.<br></br>
+-Privacy Protection: We respect user and do not share personal information with third parties. </p>
                 <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">March 26, 2024</span>
               </Link>
             </li>
