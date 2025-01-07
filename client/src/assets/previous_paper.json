@@ -2630,5 +2630,566 @@
                 }
             }
         }
+    },
+    {
+        "branch": "Electrical Engineering",
+        "year": {
+            "SE": {
+                "subject": {
+                    "Power Generation Technology": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/file/d/1r1x1Rw--UkGzrTcV54uo-pw5_l4I_VEv/view?usp=drive_link"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/file/d/1fWjyVkG60YzYrgsM8lj_JVi5zcCbr-2U/view?usp=drive_link"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/file/d/1c1szXbMockq96aqdXm2ZxGvI9ltwoX4E/view?usp=drive_link"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/file/d/1OJGRwOKhPAaSN8wwPX_LJkkk4VwdXOG3/view?usp=drive_link"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2017",
+                            "link": "https://drive.google.com/file/d/1KXOt89zc0wJuItBv64X27dsdXr6MVyNg/view?usp=drive_link"
+                        }
+                    ],
+                    "Numerical Method & Computing": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Network Analysis": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Power System-I": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Material Sciences": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Fundamentals of Microcontrollers and ITs app": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Enginnering Maths III": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }   
+                    ],
+                    "Electrical Machines-I": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Electrical Measurements and Instrumentation": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Analog and Digital Electronics": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ]
+                }
+            },
+            "TE": {
+                "subject": {
+                    "Architechture & Town Planning": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Construction Management": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },   
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        } 
+                    ],
+                    "Design of RC Structures": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Design of steel Structures": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Engineering Economics & Financial Mgt": [
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Hydrology & water Resource Engineering": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Remote Sensing & Geographic Info System": [
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Research Methodology": [
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Solid Waste Management": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Waste Water Engineering": [
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Water Supply Engineering": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2022",
+                            "link": "hhttps://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ]
+                }
+            },
+            "BE": {
+                "subject": {
+                    "Air Pollution & Control": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Airport & Bridge Engineering": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "DAMS & Hydraulics Structures": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Foundation Engineering": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Integrated Water Resource Planning": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Irrigation & Drainage": [
+                        {
+                            "paper_name": "Feb-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Quantity Surveying Contracts & Tenders": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "TQM & MIS": [
+                        {
+                            "paper_name": "May_Jun_2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Nov_Dec_2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ],
+                    "Transportation Engg": [
+                        {
+                            "paper_name": "Oct-2022",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        },
+                        {
+                            "paper_name": "Sep-2023",
+                            "link": "https://drive.google.com/uc?export=download&id=FILE_ID"
+                        }
+                    ]
+                }
+            }
+        }
     }
 ]
